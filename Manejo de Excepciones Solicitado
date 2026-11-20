@@ -1,0 +1,17 @@
+try:
+    cliente = Cliente("", "correo", "123")
+except ClienteError as e:
+    print(e)
+
+try:
+    cliente = Cliente(
+        "Carlos",
+        "carlos@gmail.com",
+        "300111222"
+    )
+
+except ClienteError as e:
+    print(e)
+
+else:
+    print("Cliente creado")
